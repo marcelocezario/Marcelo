@@ -87,7 +87,7 @@ if($executar){
 
 
 # Limpar tabelas do banco, delete sem where
-
+/*
 $query = "DELETE FROM ALUNOS";
 
 $executar = mysqli_query($conexao, $query);
@@ -113,6 +113,17 @@ if($executar){
     echo "Executado com sucesso (delete alunos_cursos)<br>";
 } else {
     echo "Falha ao executar (delete alunos_cursos)<br>";
+}
+
+*/
+
+# Atualizando dados na tabela
+if(mysqli_query($conexao, "UPDATE ALUNOS SET NOME_ALUNO = 'José Miguel' where id_aluno = 40")){
+    echo "Sucesso";
+}
+
+if(mysqli_query($conexao, "UPDATE ALUNOS SET NOME_ALUNO = 'Maria Alggg' where id_aluno = 42")){
+    echo "Sucesso";
 }
 
 ?>
