@@ -61,9 +61,27 @@ $query = "INSERT INTO ALUNOS(nome_aluno, data_nascimento) VALUES ('José', '01-0
 
 $executar = mysqli_query($conexao, $query);
 if($executar){
-    echo "Executado com sucesso (insert)<br>";
+    echo "Executado com sucesso (insert alunos)<br>";
 } else {
-    echo "Falha ao executar (insert)<br>";
+    echo "Falha ao executar (insert alunos)<br>";
+}
+
+$query = "INSERT INTO CURSOS (nome_curso, carga_horaria) VALUES ('PHP', 10)";
+
+$executar = mysqli_query($conexao, $query);
+if($executar){
+    echo "Executado com sucesso (insert cursos)<br>";
+} else {
+    echo "Falha ao executar (insert cursos)<br>";
+}
+
+$query = "INSERT INTO ALUNOS_CURSOS (id_aluno, id_curso) VALUES (8, 1)";
+
+$executar = mysqli_query($conexao, $query);
+if($executar){
+    echo "Executado com sucesso (insert alunos_cursos)<br>";
+} else {
+    echo "Falha ao executar (insert alunos_cursos)<br>";
 }
 
 ?>
