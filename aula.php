@@ -84,6 +84,37 @@ if($executar){
     echo "Falha ao executar (insert alunos_cursos)<br>";
 }
 
+
+
+# Limpar tabelas do banco, delete sem where
+
+$query = "DELETE FROM ALUNOS";
+
+$executar = mysqli_query($conexao, $query);
+if($executar){
+    echo "Executado com sucesso (delete alunos)<br>";
+} else {
+    echo "Falha ao executar (delete alunos)<br>";
+}
+
+$query = "DELETE FROM CURSOS";
+
+$executar = mysqli_query($conexao, $query);
+if($executar){
+    echo "Executado com sucesso (delete cursos)<br>";
+} else {
+    echo "Falha ao executar (delete cursos)<br>";
+}
+
+$query = "DELETE FROM ALUNOS_CURSOS";
+
+$executar = mysqli_query($conexao, $query);
+if($executar){
+    echo "Executado com sucesso (delete alunos_cursos)<br>";
+} else {
+    echo "Falha ao executar (delete alunos_cursos)<br>";
+}
+
 ?>
 
 
