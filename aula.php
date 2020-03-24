@@ -53,8 +53,18 @@ if($executar){
     echo "Executado com sucesso (alunos_cursos)<br>";
 } else {
     echo "Falha ao executar (alunos_cursos)<br>";
-} 
+}
 
+
+# Inserir dados nas tabelas *****************************************
+$query = "INSERT INTO ALUNOS(nome_aluno, data_nascimento) VALUES ('José', '01-01-1990')";
+
+$executar = mysqli_query($conexao, $query);
+if($executar){
+    echo "Executado com sucesso (insert)<br>";
+} else {
+    echo "Falha ao executar (insert)<br>";
+}
 
 ?>
 
