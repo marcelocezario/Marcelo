@@ -115,7 +115,7 @@ if($executar){
     echo "Falha ao executar (delete alunos_cursos)<br>";
 }
 
-*/
+
 
 # Atualizando dados na tabela
 if(mysqli_query($conexao, "UPDATE ALUNOS SET NOME_ALUNO = 'José Miguel' where id_aluno = 40")){
@@ -125,6 +125,33 @@ if(mysqli_query($conexao, "UPDATE ALUNOS SET NOME_ALUNO = 'José Miguel' where i
 if(mysqli_query($conexao, "UPDATE ALUNOS SET NOME_ALUNO = 'Maria Alggg' where id_aluno = 42")){
     echo "Sucesso";
 }
+
+*/
+
+echo '<table border=1>
+        <tr>
+            <th>id</th>
+            <th>Nome</th>
+            <th>Data de nascimento</th>
+        </tr>';
+
+$consulta = mysqli_query($conexao, "SELECT * FROM ALUNOS");
+
+while($linha = mysqli_fetch_array($consulta)){
+    echo '<tr>';
+    echo '<td>';
+    echo $linha['id_aluno'];
+    echo '</td>';
+    echo '<td>';
+    echo $linha['nome_aluno'];
+    echo '</td>';
+    echo '<td>';
+    echo $linha['data_nascimento'];
+    echo '</td>';
+    echo '</tr>';
+}
+
+echo '</table>';
 
 ?>
 
