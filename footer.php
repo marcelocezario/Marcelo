@@ -5,3 +5,5 @@
         ©2020 Curso de PHP e MySQL Udemy - Todos os direitos reservados
     </div>
 </footer>
+</body>
+</html>   
