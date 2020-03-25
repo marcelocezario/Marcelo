@@ -1,8 +1,9 @@
  <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Curso PHP & MySQL Udemy</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo.css">
   </head>
   
   <body>
