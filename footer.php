@@ -2,6 +2,6 @@
 
 <footer>
     <div class="container">
-        Rodapé
+        ©2020 Curso de PHP e MySQL Udemy - Todos os direitos reservados
     </div>
 </footer>
