@@ -29,6 +29,9 @@ elseif($pagina == 'inserir_aluno'){
 elseif($pagina == 'matriculas'){
     include 'views/matriculas.php';
 }
+elseif($pagina == 'inserir_matricula'){
+    include 'views/inserir_matricula.php';
+}
 else {
     include 'views/home.php';
 }
