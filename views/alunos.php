@@ -4,6 +4,7 @@
     <tr>
         <th>Nome aluno</th>
         <th>Data nascimento</th>
+        <th>Editar</th>
         <th>Deletar</th>
     </tr>
 
