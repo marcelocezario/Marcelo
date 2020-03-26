@@ -25,7 +25,7 @@ switch ($pagina) {
     case 'inserir_curso':
         include 'views/inserir_curso.php';
         break;
-    case 'matricula':
+    case 'matriculas':
         include 'views/matriculas.php';
         break;
     case 'inserir_matricula':

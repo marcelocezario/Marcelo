@@ -4,15 +4,22 @@
     <tr>
         <th>Nome curso</th>
         <th>Carga Horária</th>
+        <th>Deletar</th>
     </tr>
 
     <?php
-        while($linha = mysqli_fetch_array($consulta_cursos)){
-            echo '<tr>';
-            echo '<td>'.$linha['nome_curso'].'</td>';
-            echo '<td>'.$linha['carga_horaria'].'</td>';
-            echo '</tr>';
-        }
+    while ($linha = mysqli_fetch_array($consulta_cursos)) {
+        echo '<tr>';
+        echo '<td>' . $linha['nome_curso'] . '</td>';
+        echo '<td>' . $linha['carga_horaria'] . '</td>';
     ?>
+        <td><a href="deleta_curso.php?id_curso=<?php echo $linha['id_curso'];?>">Deletar</a></td>
+        </tr>
+
+    <?php
+    }
+    ?>
+
+
 
 </table>
