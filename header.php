@@ -5,6 +5,8 @@
      <title>Curso PHP & MySQL Udemy</title>
      <meta charset="utf-8">
      <link rel="stylesheet" href="css/estilo.css">
+     <link rel="stylesheet" href="css/bootstrap.min.js">
+     <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
  </head>
 
  <body>
