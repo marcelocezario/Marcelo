@@ -1,6 +1,6 @@
 <a href="?pagina=inserir_curso">Inserir novo curso</a>
 
-<table class="table" id="cursos">
+<table class="table table-hover table-striped" id="cursos">
     <thead>
         <tr>
             <th>Nome curso</th>
