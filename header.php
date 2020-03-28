@@ -13,12 +13,18 @@
  <body>
      <header>
          <div class="container">
-             <a href="?pagina=home"><img src="img/logo.png" id="logo" tittle="Logo" alt="Logo">
-                 <div id="menu">
+             <a href="?pagina=home"><img src="img/logo.png" id="logo" tittle="Logo" alt="Logo"></a>
+             <div id="menu">
+                 <?php if (isset($_SESSION['login'])) { ?>
+
                      <a href="?pagina=cursos">Cursos</a>
                      <a href="?pagina=alunos">Alunos</a>
                      <a href="?pagina=matriculas">Matrículas</a>
-                 </div>
+                     <a href="logout.php"><?php echo $_SESSION['usuario']; ?>(sair)</a>
+                 <?php
+                    }
+                    ?>
+             </div>
          </div>
      </header>
 
