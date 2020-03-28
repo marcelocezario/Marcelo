@@ -1,4 +1,8 @@
-<a href="?pagina=inserir_aluno">Inserir novo aluno</a>
+<a href="?pagina=inserir_aluno">
+    <span style="font-size: 48px; color: Dodgerblue;">
+        <i class="fas fa-plus-circle"></i>
+    </span>
+</a>
 
 <table class="table table-hover table-striped" id="alunos">
     <thead>
@@ -18,10 +22,15 @@
             echo '<td>' . $linha['data_nascimento'] . '</td>';
         ?>
             <td><a href="?pagina=inserir_aluno&editar=<?php echo $linha['id_aluno']; ?>">
-                    <i class="far fa-edit"></i>
+                    <span style="color: #0067FF;">
+                        <i class="far fa-edit"></i>
+                    </span>
+
                 </a></td>
             <td><a href="deleta_aluno.php?id_aluno=<?php echo $linha['id_aluno']; ?>">
-                    <i class="far fa-trash-alt"></i>
+                    <span style="color: #FF0000;">
+                        <i class="far fa-trash-alt"></i>
+                    </span>
                 </a></td>
             </tr>
 
