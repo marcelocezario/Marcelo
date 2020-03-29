@@ -9,6 +9,8 @@ class Programador extends Pessoa {
     {
         $this->nome = $tmpNome;
         $this->linguagem = $tmpLinguagem;
+
+        echo "<br>Objeto ".__CLASS__." foi instanciado. <br>";
     }
 
 }
