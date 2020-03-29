@@ -28,3 +28,8 @@ echo $uma_pessoa->getNome();
 $programador = new Programador ("Diego", "PHP");
 
 echo $programador->getNome();
+
+# constantes
+echo $programador::ESPECIE;
+
+

@@ -8,6 +8,9 @@ class Pessoa{
 
     protected $nome;
 
+    #constante
+    const ESPECIE = "Humana";
+
     public function __construct($tmpNome)
     {
         $this->nome = $tmpNome;
