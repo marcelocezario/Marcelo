@@ -4,9 +4,9 @@ class Pessoa{
 
     //public
     //private
-    //protected
+    //protected -> pode ser utilizada por classes que estão herdando
 
-    private $nome;
+    protected $nome;
 
     public function __construct($tmpNome)
     {
