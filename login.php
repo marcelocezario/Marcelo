@@ -3,7 +3,7 @@
 include 'db.php';
 
 $usuario = addslashes($_POST['usuario']);
-$senha = addslashes($_POST['senha']);
+$senha = md5($_POST['senha']);
 
 $query = "SELECT * FROM USUARIOS WHERE USUARIO = '$usuario' and SENHA = '$senha'";
 
